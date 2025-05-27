@@ -5,8 +5,8 @@ use IEEE.NUMERIC_STD.ALL;
 entity TrafLighCont is
     Port ( CLK         : in  STD_LOGIC;
         RST       : in  STD_LOGIC;
-        N-S_LIGHT    : out STD_LOGIC_VECTOR(1 downto 0);
-        E-W_LIGHT    : out STD_LOGIC_VECTOR(1 downto 0));
+        N-S_LIGHT    : out STD_LOGIC_VECTOR(1 downto 0); --North to South
+        E-W_LIGHT    : out STD_LOGIC_VECTOR(1 downto 0)); --East to West
 end TrafLighCont;
 
 architecture Behav of TrafLighCont is
